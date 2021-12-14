@@ -10,5 +10,5 @@ Spacebar to place bombs on the ground.
 Kill all other players with bombs.
 
 Github: https://github.com/Sean-Balfour/CMP303_Project_1803643
-Video: 
+Video: https://web.microsoftstream.com/video/feaf54a5-0b24-4122-a2ef-23b43bf7361b
 Used assets: https://opengameart.org/content/bomb-party-expansion https://www.kenney.nl/assets/tower-defense-top-down
