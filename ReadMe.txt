@@ -9,5 +9,5 @@ W/A/S/D to move Up/Left/Down/Right.
 Spacebar to place bombs on the ground.
 Kill all other players with bombs.
 
-Github: 
+Github: https://github.com/Sean-Balfour/CMP303_Project_1803643
 Video: 
