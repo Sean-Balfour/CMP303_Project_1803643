@@ -65,11 +65,15 @@ public class GridManager : MonoBehaviour
             Tile northTile = GetTile(new Vector2(_startPos.x, _startPos.y + i));
             if (northTile != null)
             {
-                if ((northTile.TType == TileType.CLEAR || northTile.TType == TileType.WALL) && stop[0] == false)
+                if (stop[0] == false)
                 {
-                    if (northTile.TType == TileType.WALL || northTile.TType == TileType.SOLID)
+                    if (northTile.TType == TileType.WALL)
                     {
                         northTile.TType = TileType.CLEAR;
+                        stop[0] = true;
+                    }
+                    else if (northTile.TType == TileType.SOLID)
+                    {
                         stop[0] = true;
                     }
 
@@ -84,11 +88,15 @@ public class GridManager : MonoBehaviour
             Tile eastTile = GetTile(new Vector2(_startPos.x + i, _startPos.y));
             if (eastTile != null)
             {
-                if ((eastTile.TType == TileType.CLEAR || eastTile.TType == TileType.WALL) && stop[1] == false)
+                if (stop[1] == false)
                 {
-                    if (eastTile.TType == TileType.WALL || eastTile.TType == TileType.SOLID)
+                    if (eastTile.TType == TileType.WALL)
                     {
                         eastTile.TType = TileType.CLEAR;
+                        stop[1] = true;
+                    }
+                    else if (eastTile.TType == TileType.SOLID)
+                    {
                         stop[1] = true;
                     }
 
@@ -104,11 +112,15 @@ public class GridManager : MonoBehaviour
             Tile southTile = GetTile(new Vector2(_startPos.x, _startPos.y - i));
             if (southTile != null)
             {
-                if ((southTile.TType == TileType.CLEAR || southTile.TType == TileType.WALL) && stop[2] == false)
+                if (stop[2] == false)
                 {
-                    if (southTile.TType == TileType.WALL || southTile.TType == TileType.SOLID)
+                    if (southTile.TType == TileType.WALL)
                     {
                         southTile.TType = TileType.CLEAR;
+                        stop[2] = true;
+                    }
+                    else if (southTile.TType == TileType.SOLID)
+                    {
                         stop[2] = true;
                     }
 
@@ -124,11 +136,15 @@ public class GridManager : MonoBehaviour
             Tile westTile = GetTile(new Vector2(_startPos.x - i, _startPos.y));
             if (westTile != null)
             {
-                if ((westTile.TType == TileType.CLEAR || westTile.TType == TileType.WALL) && stop[3] == false)
+                if (stop[3] == false)
                 {
-                    if (westTile.TType == TileType.WALL || westTile.TType == TileType.SOLID)
+                    if (westTile.TType == TileType.WALL)
                     {
                         westTile.TType = TileType.CLEAR;
+                        stop[3] = true;
+                    }
+                    else if (westTile.TType == TileType.SOLID)
+                    {
                         stop[3] = true;
                     }
 

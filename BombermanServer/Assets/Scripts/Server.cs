@@ -124,7 +124,7 @@ public class Server
         packetHandlers = new Dictionary<int, PacketHandler>()
             {
                 { (int)ClientPackets.welcomeReceived, ServerHandle.WelcomeReceived },
-                { (int)ClientPackets.plaverMovement, ServerHandle.PlayerMovement },
+                { (int)ClientPackets.playerMovement, ServerHandle.PlayerMovement },
             };
 
         Debug.Log("Initialized packets.");
