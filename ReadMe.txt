@@ -11,3 +11,4 @@ Kill all other players with bombs.
 
 Github: https://github.com/Sean-Balfour/CMP303_Project_1803643
 Video: 
+Used assets: https://opengameart.org/content/bomb-party-expansion https://www.kenney.nl/assets/tower-defense-top-down
